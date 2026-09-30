@@ -1,0 +1,273 @@
+{
+  "proxy": {
+    "n_s1": 125895,
+    "pairs": 3147374,
+    "info": {
+      "india": {
+        "s1_partition": 883188,
+        "removed_share": 0.1958586393836873,
+        "pool_per_present_s1": 5.819909097053258,
+        "test_pool_per_s1": 5.8242549871232345,
+        "proxy_s1": 65877,
+        "regions": 8040,
+        "gold_pairs": 227762,
+        "gold_pairs_in_pool": 227762
+      },
+      "us": {
+        "s1_partition": 1323633,
+        "removed_share": 0.1878156558502243,
+        "pool_per_present_s1": 5.755048677530199,
+        "test_pool_per_s1": 5.756290849426788,
+        "proxy_s1": 60018,
+        "regions": 4231,
+        "gold_pairs": 207736,
+        "gold_pairs_in_pool": 207736
+      }
+    },
+    "folds_s1": [
+      42701.0,
+      20513.0,
+      16885.0,
+      18073.0,
+      27723.0
+    ]
+  },
+  "profile_proxy": {
+    "india": {
+      "pairs_per_s1": 24.999984820195213,
+      "gray_0.2_0.8": 0.007525544591007236,
+      "strong_per_s1": 3.326077386644808,
+      "s1_top_below_0.5": 0.05991468949709307,
+      "records_claimed_by_2plus_s1": 0.0011880663306571377
+    },
+    "us": {
+      "pairs_per_s1": 25.0,
+      "gray_0.2_0.8": 0.00788963311006698,
+      "strong_per_s1": 3.368122896464394,
+      "s1_top_below_0.5": 0.05876570362224666,
+      "records_claimed_by_2plus_s1": 0.0007475469568403022
+    }
+  },
+  "entity_gate": {
+    "auc_oof": 0.9983426584556827,
+    "singleton_share": 0.05590372929822471
+  },
+  "nested_f05": {
+    "1_recalibrated_on_proxy_hard_exclusivity": {
+      "f05": 0.9768997589607133,
+      "chosen_per_fold": [
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.0,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.0,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ]
+      ]
+    },
+    "2_plus_exclusivity_as_probability": {
+      "f05": 0.9768997589607133,
+      "chosen_per_fold": [
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.0,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.0,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ]
+      ]
+    },
+    "3_plus_entity_gate_h": {
+      "f05": 0.9768997589607133,
+      "chosen_per_fold": [
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.0,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.0,
+          0.0,
+          false
+        ],
+        [
+          "hard",
+          1.25,
+          0.0,
+          false
+        ]
+      ]
+    }
+  },
+  "accepted_step": "1_recalibrated_on_proxy_hard_exclusivity",
+  "final_config": {
+    "mode": "hard",
+    "a": 1.25,
+    "b": 0.0,
+    "use_h": false,
+    "in_sample_f05": 0.9769821471400826
+  },
+  "top_configs": [
+    [
+      "['hard', 1.25, 0.0, False]",
+      0.9769821471400826
+    ],
+    [
+      "['hard', 1.25, -0.25, False]",
+      0.9769417418004671
+    ],
+    [
+      "['hard', 1.0, 0.0, False]",
+      0.9769374636394772
+    ],
+    [
+      "['hard', 1.5, -0.25, False]",
+      0.9769319561362689
+    ],
+    [
+      "['hard', 1.5, 0.0, False]",
+      0.9769216054229395
+    ],
+    [
+      "['hard', 1.0, 0.25, False]",
+      0.9769039929105308
+    ],
+    [
+      "['hard', 1.5, -0.5, False]",
+      0.97688362383483
+    ],
+    [
+      "['hard', 1.25, 0.25, False]",
+      0.9768729322809296
+    ],
+    [
+      "['hard', 2.0, -0.5, False]",
+      0.9768645741945854
+    ],
+    [
+      "['hard', 2.0, -0.25, False]",
+      0.976839059699357
+    ],
+    [
+      "['hard', 1.0, -0.25, False]",
+      0.9768192769231319
+    ],
+    [
+      "['hard', 1.25, -0.5, False]",
+      0.9767889649368177
+    ],
+    [
+      "['hard', 2.0, 0.0, False]",
+      0.9767433966631215
+    ],
+    [
+      "['hard', 1.5, 0.25, False]",
+      0.9767227657964523
+    ],
+    [
+      "['hard', 2.0, 0.25, False]",
+      0.976624605976408
+    ]
+  ],
+  "new_policy_on_proxy_in_sample": {
+    "macro_f05": 0.9769821471400747,
+    "by_country": {
+      "india": 0.974312198672001,
+      "us": 0.9799127378833734
+    },
+    "singletons": {
+      "share": 0.05590372929822471,
+      "accuracy": 0.9769820971867008,
+      "loss_points": 0.0012867866078875253
+    },
+    "missed_entity": {
+      "n": 632,
+      "loss_points_no_true_candidate": 0.0019857818022955636,
+      "loss_points_true_candidate_not_taken": 0.0030342745939076214
+    },
+    "gain_if_no_false_positives": 0.003647614238458399,
+    "gain_if_all_true_candidates_taken": 0.010277866578239701,
+    "gain_bound_if_missing_gold_became_candidates_and_taken": 0.00851894986907508,
+    "false_positives": {
+      "total": 2239,
+      "record_owned_by_another_s1": 107,
+      "unowned_record": 2132,
+      "in_singleton_s1": 199
+    },
+    "count_error_(pred-gold)_for_s1_with_matches": {
+      "-3.0": 0.0044,
+      "-2.0": 0.0209,
+      "-1.0": 0.1368,
+      "0.0": 0.8241,
+      "1.0": 0.0133,
+      "2.0": 0.0004,
+      "3.0": 0.0001
+    },
+    "blocking_recall": {
+      "union": 0.9842823618018912,
+      "at_cap25": 0.9768173447409633,
+      "at_cap40": 0.9801009419101809,
+      "candidates": 0.9768173447409633
+    }
+  }
+}

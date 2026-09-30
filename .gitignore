@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Challenge data and large derived files: never committed (see README "Data")
+student_resource/
+dataset/
+ber_cache/
+output/
+*.tsv
+*.parquet
+*.joblib
+*.zip
+
+# Cross-encoder kit data and Kaggle outputs
+kaggle_ce/data/
+ce_work/
+ce_outputs/
+
+# Logs of local runs (the reports/*/run.log files of the documented runs are kept)
+/*.log
+
+# OS / editor
+.DS_Store
+__MACOSX/
+Thumbs.db
+.vscode/
+.idea/

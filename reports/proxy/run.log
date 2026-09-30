@@ -1,0 +1,62 @@
+21:37:26 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-aa22d71da7290a1b.parquet
+21:37:26 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-aa22d71da7290a1b.parquet
+21:37:26 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-aa22d71da7290a1b.parquet
+21:37:26 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-aa22d71da7290a1b.parquet
+21:37:26 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-aa22d71da7290a1b.parquet
+21:37:26 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-aa22d71da7290a1b.parquet
+21:37:27 INFO GPU GBDT unavailable (nvidia-smi not found); using LightGBM on CPU
+21:37:28 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold0 (0.4s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:28 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold1 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:28 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold2 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:28 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold3 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:28 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold4 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass1-566ac748c3e149b6-fold0 (0.1s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass1-566ac748c3e149b6-fold1 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass1-566ac748c3e149b6-fold2 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass1-566ac748c3e149b6-fold3 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass1-566ac748c3e149b6-fold4 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass2-53a1f69ab46785a9-fold0 (0.1s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass2-53a1f69ab46785a9-fold1 (0.1s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass2-53a1f69ab46785a9-fold2 (0.1s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:29 INFO    checkpoint hit: scale-pass2-53a1f69ab46785a9-fold3 (0.1s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:30 INFO    checkpoint hit: scale-pass2-53a1f69ab46785a9-fold4 (0.1s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+21:37:30 INFO proxy: models scale-meta-79d7c0cb98631d6f / scale-pass1-566ac748c3e149b6 / scale-pass2-53a1f69ab46785a9, 103 pass-1 features
+21:37:42 INFO proxy india: 883188 S1 (19.6% removed -> pool/S1 5.82, test 5.82), 153351 proxy S1 in 17434 regions
+21:41:33 INFO   index: S1=710208 pool=4133346 nnz/pool-row name 3.6 addr 9.2 joint 12.4  (229s)
+21:41:51 INFO     india index over 710208 present S1 x 4133346 pool built (253s, RSS 2.96 GB)
+21:46:28 INFO features: 400000 pairs x 103 features in 31.6s
+21:46:48 INFO features: 400000 pairs x 103 features in 19.5s
+21:47:07 INFO features: 400000 pairs x 103 features in 18.1s
+21:47:23 INFO features: 400000 pairs x 103 features in 15.9s
+21:47:39 INFO features: 400000 pairs x 103 features in 15.6s
+21:47:55 INFO features: 400000 pairs x 103 features in 15.9s
+21:48:01 INFO features: 99973 pairs x 103 features in 6.2s
+21:52:21 INFO    checkpoint saved: proxy-4c02217112c36f88-chunk0 (36.3 MB, 1.2s)
+21:52:21 INFO     india proxy chunk 1: 100000 S1 -> 2499973 candidates | 883s, RSS 1.53 GB
+21:55:07 INFO features: 400000 pairs x 103 features in 26.3s
+21:55:28 INFO features: 400000 pairs x 103 features in 20.2s
+21:55:43 INFO features: 400000 pairs x 103 features in 15.2s
+21:55:50 INFO features: 133775 pairs x 103 features in 6.9s
+21:58:09 INFO    checkpoint saved: proxy-4c02217112c36f88-chunk1 (19.4 MB, 0.6s)
+21:58:09 INFO     india proxy chunk 2: 53351 S1 -> 1333775 candidates | 1230s, RSS 3.68 GB
+21:58:16 INFO proxy us: 1323633 S1 (18.8% removed -> pool/S1 5.76, test 5.76), 155495 proxy S1 in 12237 regions
+22:06:15 INFO   index: S1=1075034 pool=6186873 nnz/pool-row name 4.0 addr 6.1 joint 9.7  (465s)
+22:06:52 INFO     us index over 1075034 present S1 x 6186873 pool built (522s, RSS 5.49 GB)
+22:13:01 INFO features: 400000 pairs x 103 features in 37.6s
+22:13:20 INFO features: 400000 pairs x 103 features in 19.1s
+22:13:37 INFO features: 400000 pairs x 103 features in 16.5s
+22:13:54 INFO features: 400000 pairs x 103 features in 16.6s
+22:14:11 INFO features: 400000 pairs x 103 features in 16.3s
+22:14:27 INFO features: 400000 pairs x 103 features in 16.1s
+22:14:35 INFO features: 100000 pairs x 103 features in 7.3s
+22:21:58 INFO    checkpoint saved: proxy-827a7cecaafc8ff7-chunk0 (36.6 MB, 1.7s)
+22:21:58 INFO     us proxy chunk 1: 100000 S1 -> 2500000 candidates | 1428s, RSS 4.2 GB
+22:26:45 INFO features: 400000 pairs x 103 features in 47.1s
+22:27:09 INFO features: 400000 pairs x 103 features in 23.2s
+22:27:29 INFO features: 400000 pairs x 103 features in 20.2s
+22:27:42 INFO features: 187375 pairs x 103 features in 12.3s
+22:31:49 INFO    checkpoint saved: proxy-827a7cecaafc8ff7-chunk1 (20.3 MB, 1.0s)
+22:31:49 INFO     us proxy chunk 2: 55495 S1 -> 1387375 candidates | 2018s, RSS 3.92 GB
+22:32:06 INFO    checkpoint saved: proxy-built-v1-150000 (116.2 MB, 5.8s)
+22:32:06 INFO proxy built: 308846 S1, 7721123 pairs, gold 1068698 | recall union 0.9660, @cap25 0.9578, @cap40 0.9623, candidates 0.9578
+22:32:06 INFO proxy info: {"india": {"s1_partition": 883188, "removed_share": 0.1958586393836873, "pool_per_present_s1": 5.819909097053258, "test_pool_per_s1": 5.8242549871232345, "proxy_s1": 153351, "regions": 17434, "gold_pairs": 530219, "gold_pairs_in_pool": 530219}, "us": {"s1_partition": 1323633, "removed_share": 0.1878156558502243, "pool_per_present_s1": 5.755048677530199, "test_pool_per_s1": 5.756290849426788, "proxy_s1": 155495, "regions": 12237, "gold_pairs": 538479, "gold_pairs_in_pool": 538479}}

@@ -1,0 +1,34 @@
+22:16:31 INFO    checkpoint hit: proxy-built-v1-60000-big-pass2-41be4f64bfd6c2f2 (0.5s, ..\..\ber_cache)
+22:16:43 INFO cross-encoder holdout scores: 807809 pairs, models ['ce_e5s', 'ce_xlmr']
+22:17:05 INFO cross-encoder test scores: 5296520 pairs, models ['ce_e5s', 'ce_xlmr']
+22:17:05 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-44f14e243278c45104c801.parquet
+22:17:05 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-44f14e243278c45104c801.parquet
+22:17:12 INFO   ce_e5s: 9.8% of pairs scored
+22:17:13 INFO   ce_xlmr: 9.8% of pairs scored
+22:20:08 INFO stacker importance: {'margin_rival': np.float64(0.578), 'lp2': np.float64(0.397), 'ce_xlmr': np.float64(0.011), 'ce_e5s': np.float64(0.006), 'gap_top': np.float64(0.002), 'meta': np.float64(0.001), 'ce_e5s_x_lp2': np.float64(0.001), 'rel_top': np.float64(0.001), 'rival_p': np.float64(0.001), 'ce_xlmr_x_lp2': np.float64(0.001), 's1_mass': np.float64(0.001), 'lp1': np.float64(0.001)}
+22:20:10 INFO stacker on the holdout (OOF): AUC 0.999671 -> 0.999833 | logloss 0.01352 -> 0.00914
+22:20:13 INFO proxy profile: {'india': {'pairs_per_s1': 24.999984820195213, 'gray_0.2_0.8': 0.004000791779098489, 'strong_per_s1': 3.320931432821774, 's1_top_below_0.5': 0.05959591359655115, 'records_claimed_by_2plus_s1': 0.00014629240193837434}, 'us': {'pairs_per_s1': 25.0, 'gray_0.2_0.8': 0.0055290079642773835, 'strong_per_s1': 3.3686727315138794, 's1_top_below_0.5': 0.0583158385817588, 'records_claimed_by_2plus_s1': 7.91432740583187e-05}}
+22:20:19 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-44f14e243278c45104c801.parquet
+22:20:19 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-44f14e243278c45104c801.parquet
+22:20:19 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-44f14e243278c45104c801.parquet
+22:20:19 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-44f14e243278c45104c801.parquet
+22:20:19 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-44f14e243278c45104c801.parquet
+22:20:19 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-44f14e243278c45104c801.parquet
+22:20:19 INFO GPU GBDT unavailable (nvidia-smi not found); using LightGBM on CPU
+22:20:20 INFO    checkpoint hit: big-test-cf26b721d96f007e (0.7s, ..\..\ber_cache)
+22:20:21 INFO test profile france: {'pairs_per_s1': 24.99996145722523, 'gray_0.2_0.8': 0.019412792212497438, 'strong_per_s1': 3.5445361762484007, 's1_top_below_0.5': 0.052094414381080124, 'records_claimed_by_2plus_s1': 0.011244784552921586}
+22:20:21 INFO test france: 259452 S1, 1434993 pool, 6486290 pairs (big-test-cf26b721d96f007e)
+22:20:23 INFO    checkpoint hit: big-test-0da93e747d6c3049 (2.3s, ..\..\ber_cache)
+22:20:26 INFO test profile india: {'pairs_per_s1': 24.999923455467133, 'gray_0.2_0.8': 0.011284130817871454, 'strong_per_s1': 3.4000760506971726, 's1_top_below_0.5': 0.05918373897820456, 'records_claimed_by_2plus_s1': 0.0035440068780849244}
+22:20:26 INFO test india: 809986 S1, 4717565 pool, 20249588 pairs (big-test-0da93e747d6c3049)
+22:20:28 INFO    checkpoint hit: big-test-d89c4b527125ad5c (2.1s, ..\..\ber_cache)
+22:20:31 INFO test profile us: {'pairs_per_s1': 24.99998039529125, 'gray_0.2_0.8': 0.015714181701529596, 'strong_per_s1': 3.5650650122303222, 's1_top_below_0.5': 0.05630773963740337, 'records_claimed_by_2plus_s1': 0.00234667327048399}
+22:20:31 INFO test us: 663106 S1, 3817031 pool, 16577637 pairs (big-test-d89c4b527125ad5c)
+22:21:37 INFO   ce_e5s: 11.6% of pairs scored
+22:21:37 INFO   ce_xlmr: 11.6% of pairs scored
+22:28:10 INFO test pairs re-scored by the stacker (mean p 0.1351)
+22:29:17 INFO logit shift +0.20 applied to france
+22:29:18 INFO logit shift +0.20 applied to india
+22:29:18 INFO logit shift +0.20 applied to us
+22:33:44 INFO test decoded: {'pairs_selected': 5737454, 's1_with_matches': 1630461, 'n_s1': 1732544, 'mean_matches': 3.31157765690222, 'empty_rate': 0.058920870119315905, 'path': '..\\..\\output\\v4_fused_noshift_all20\\matching_results.tsv', 'candidates_file': '..\\..\\output\\v4_fused_noshift_all20\\candidate_pairs.tsv', 'by_partition': {'france': {'n_s1': 259452, 'mean_matches': 3.252620908684458, 'empty_rate': 0.0576291568382591}, 'india': {'n_s1': 809986, 'mean_matches': 3.290037111752549, 'empty_rate': 0.060259066206082575}, 'us': {'n_s1': 663106, 'mean_matches': 3.360957373330961, 'empty_rate': 0.05779166528428336}}, 'official_validator': {'pass': True, 'output': 'ML Challenge 2026 â€” submission validator\n  test dir: ..\\..\\student_resource\\dataset\\test\n  required S1 entities: 1732544\n  matching_results.tsv: 1732544 rows (102083 empty, 1630461 non-empty).\n  candidate_pairs.tsv: 1732544 rows (0 empty, 1732544 non-empty).\n\nWARNING: ID-existence check is OFF (the default) â€” not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.\nPASS â€” no blocking issues found. Safe to submit.'}, 'sha256': '0e797a39dd0860a2e54b95649cf103a0ca1859a7759de608eb014fce6c33e8a3'}
+22:33:47 INFO done in 1037s -> reports_v4\decide_big_stack_ce\decide_report.json

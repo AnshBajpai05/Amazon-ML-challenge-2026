@@ -1,0 +1,62 @@
+10:07:21 INFO checkpoints: ..\..\ber_cache
+10:07:21 INFO >> [stage 1] load_data | elapsed 0m00s | RSS 0.1 GB
+10:07:21 INFO dataset: ..\..\student_resource\dataset
+10:07:26 INFO env: {'python': '3.11.8', 'platform': 'Windows-10-10.0.26200-SP0', 'cpu_count': 16, 'effective_cpus': 16, 'numpy': '2.3.3', 'scipy': '1.16.2', 'pandas': '2.3.3', 'sklearn': '1.7.2', 'lightgbm': '4.6.0', 'xgboost': '3.2.0', 'rapidfuzz': '3.14.6', 'sparse_dot_topn': '1.2.0', 'joblib': '1.5.2', 'yaml': '6.0.3', 'torch': '2.4.1+cpu', 'transformers': '5.12.0', 'ram_gb': 15.7}
+10:07:26 INFO mode: scale
+10:07:26 INFO << [stage 1] load_data done in 0m05s | total 0m05s | RSS 0.33 GB
+10:07:26 INFO >> [stage 2] normalize_sources | elapsed 0m05s | RSS 0.33 GB
+10:07:26 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-44f14e243278c45104c801.parquet
+10:07:27 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-44f14e243278c45104c801.parquet
+10:07:27 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-44f14e243278c45104c801.parquet
+10:07:27 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-44f14e243278c45104c801.parquet
+10:07:27 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-44f14e243278c45104c801.parquet
+10:07:27 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-44f14e243278c45104c801.parquet
+10:07:27 INFO << [stage 2] normalize_sources done in 0m00s | total 0m05s | RSS 0.33 GB
+10:07:27 INFO GPU GBDT unavailable (nvidia-smi not found); using LightGBM on CPU
+10:07:27 INFO >> [stage 3] train_sample | elapsed 0m06s | RSS 0.38 GB
+10:07:36 INFO train sample: 200000 S1 entities, 691838 true pairs
+10:07:36 INFO << [stage 3] train_sample done in 0m09s | total 0m15s | RSS 1.99 GB
+10:07:36 INFO >> [stage 4] train_blocking[india] | elapsed 0m15s | RSS 1.99 GB
+10:17:17 INFO   index: S1=883188 pool=4133346 nnz/pool-row name 3.4 addr 9.1 joint 12.1  (577s)
+10:18:49 INFO     india chunk 1/1: 79800 S1 -> 10933083 union pairs, 270358 true (RSS 4.97 GB)
+10:18:51 INFO << [stage 4] train_blocking[india] done in 11m14s | total 11m30s | RSS 1.81 GB
+10:18:51 INFO >> [stage 5] train_blocking[us] | elapsed 11m30s | RSS 1.81 GB
+10:29:48 INFO   index: S1=1323633 pool=6186873 nnz/pool-row name 3.9 addr 5.9 joint 9.4  (653s)
+10:31:15 INFO     us chunk 1/2: 100000 S1 -> 12832425 union pairs, 342259 true (RSS 4.96 GB)
+10:31:30 INFO     us chunk 2/2: 20200 S1 -> 3205900 union pairs, 69324 true (RSS 6.76 GB)
+10:31:31 INFO << [stage 5] train_blocking[us] done in 12m40s | total 24m10s | RSS 2.62 GB
+10:31:58 INFO    checkpoint saved: scale-union-57893f5227b9dd59 (621.2 MB, 23.5s)
+10:31:59 INFO >> [stage 6] meta_blocker | elapsed 24m38s | RSS 4.18 GB
+10:32:03 INFO   meta_blocker [lightgbm]: 26971408 rows x 27 feats, pos rate 0.0253, 5 folds x 1 seeds
+10:34:30 INFO    checkpoint saved: scale-meta-01bac6e1e12301c0-fold0 (36.6 MB, 1.1s)
+10:34:33 INFO     meta_blocker fold 1/5: AUC 0.99631  AP 0.95187  logloss 0.02018  iters [751]  146s  (ETA 599s)
+10:36:41 INFO    checkpoint saved: scale-meta-01bac6e1e12301c0-fold1 (37.0 MB, 1.3s)
+10:36:45 INFO     meta_blocker fold 2/5: AUC 0.99626  AP 0.95179  logloss 0.02008  iters [786]  128s  (ETA 422s)
+10:39:13 INFO    checkpoint saved: scale-meta-01bac6e1e12301c0-fold2 (36.4 MB, 1.2s)
+10:39:16 INFO     meta_blocker fold 3/5: AUC 0.99627  AP 0.95146  logloss 0.02046  iters [744]  148s  (ETA 289s)
+10:41:46 INFO    checkpoint saved: scale-meta-01bac6e1e12301c0-fold3 (36.6 MB, 1.2s)
+10:41:50 INFO     meta_blocker fold 4/5: AUC 0.99631  AP 0.95208  logloss 0.02019  iters [809]  150s  (ETA 147s)
+10:44:27 INFO    checkpoint saved: scale-meta-01bac6e1e12301c0-fold4 (37.4 MB, 1.2s)
+10:44:30 INFO     meta_blocker fold 5/5: AUC 0.99627  AP 0.95127  logloss 0.02024  iters [898]  157s  (ETA 0s)
+10:44:48 INFO   meta_blocker done: OOF AUC 0.99628  AP 0.95169  logloss 0.02023  in 764.6s
+10:45:33 INFO train sample blocking: PC union 0.9857 -> final 0.9795 | cand/S1 25.0 (union 134.9) | tau 0
+10:45:33 INFO << [stage 6] meta_blocker done in 13m33s | total 38m11s | RSS 0.84 GB
+10:45:33 INFO >> [stage 7] train_features | elapsed 38m11s | RSS 0.84 GB
+10:46:22 INFO features: 400000 pairs x 103 features in 27.9s
+10:46:41 INFO features: 400000 pairs x 103 features in 18.8s
+10:46:58 INFO features: 400000 pairs x 103 features in 16.3s
+10:47:13 INFO features: 400000 pairs x 103 features in 15.3s
+10:47:29 INFO features: 394987 pairs x 103 features in 15.2s
+10:47:39 INFO     india: features for 1994987 train pairs (RSS 5.44 GB)
+10:48:27 INFO features: 400000 pairs x 103 features in 17.4s
+10:48:40 INFO features: 400000 pairs x 103 features in 12.1s
+10:48:52 INFO features: 400000 pairs x 103 features in 11.8s
+10:49:04 INFO features: 400000 pairs x 103 features in 12.3s
+10:49:17 INFO features: 400000 pairs x 103 features in 12.9s
+10:49:30 INFO features: 400000 pairs x 103 features in 12.7s
+10:49:43 INFO features: 400000 pairs x 103 features in 12.1s
+10:49:50 INFO features: 205000 pairs x 103 features in 7.0s
+10:50:06 INFO     us: features for 3005000 train pairs (RSS 3.66 GB)
+10:50:43 INFO    checkpoint saved: scale-feat-f15bc9c77fc87d21 (724.0 MB, 28.7s)
+10:50:43 INFO << [stage 7] train_features done in 5m10s | total 43m22s | RSS 6.58 GB
+10:50:43 INFO train_only: 4999987 training pairs x 103 features ready; stopping before the models

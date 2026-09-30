@@ -1,0 +1,15 @@
+14:12:11 INFO    checkpoint hit: proxy-built-v1-60000-big-pass2-41be4f64bfd6c2f2 (1.3s, ..\..\ber_cache)
+14:23:24 INFO stacker importance: {'margin_rival': np.float64(0.498), 'lp2': np.float64(0.494), 'gap_top': np.float64(0.002), 'lp1': np.float64(0.001), 'meta': np.float64(0.001), 'rival_p': np.float64(0.001), 's1_mass': np.float64(0.001), 'rel_top': np.float64(0.001), 'rank_s1': np.float64(0.0), 's1_mid': np.float64(0.0), 'claim_rank': np.float64(0.0), 's1_strong': np.float64(0.0)}
+14:23:28 INFO stacker on the holdout (OOF): AUC 0.999671 -> 0.999671 | logloss 0.01352 -> 0.01333
+14:23:37 INFO proxy profile: {'india': {'pairs_per_s1': 24.999984820195213, 'gray_0.2_0.8': 0.006781733704773262, 'strong_per_s1': 3.3156185011460755, 's1_top_below_0.5': 0.0599602289114562, 'records_claimed_by_2plus_s1': 2.7470389209631117e-05}, 'us': {'pairs_per_s1': 25.0, 'gray_0.2_0.8': 0.007153187377120197, 'strong_per_s1': 3.361208304175414, 's1_top_below_0.5': 0.05863241027691692, 'records_claimed_by_2plus_s1': 3.965795017970009e-05}}
+14:24:05 INFO entity gate h: OOF AUC 0.9983 (singletons 0.056)
+14:24:21 INFO   grid for outer fold 1/5 done (731s)
+14:24:38 INFO   grid for outer fold 2/5 done (748s)
+14:24:55 INFO   grid for outer fold 3/5 done (765s)
+14:25:10 INFO   grid for outer fold 4/5 done (780s)
+14:25:35 INFO   grid for outer fold 5/5 done (805s)
+14:26:11 INFO nested F0.5 1_recalibrated_on_proxy_hard_exclusivity      0.97695  chosen ('hard', 1.25, 0.0, False)
+14:26:11 INFO nested F0.5 2_plus_exclusivity_as_probability             0.97695  chosen ('hard', 1.25, 0.0, False)
+14:26:11 INFO nested F0.5 3_plus_entity_gate_h                          0.97695  chosen ('hard', 1.25, 0.0, False)
+14:26:20 INFO final policy {'mode': 'hard', 'a': 1.5, 'b': -0.25, 'use_h': False, 'in_sample_f05': 0.9770292967860914} | in-sample proxy F0.5 0.97703
+14:26:20 INFO done in 850s -> reports_v4\decide_big_stack\decide_report.json

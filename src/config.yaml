@@ -1,0 +1,89 @@
+# Every K, tau, gamma, seed and threshold of the pipeline lives here (plan section 13).
+seed: 42
+n_folds: 5
+
+# auto: XGBoost on CUDA when a working GPU is found (Kaggle T4/P100), otherwise LightGBM on CPU.
+backend: auto            # auto | lightgbm | xgboost_cuda | xgboost_cpu
+seeds_cpu: [42]          # fold models are averaged over these seeds
+seeds_gpu: [42, 1337, 2026]
+
+# auto: partition blocking by country when >= 99.9% of train matches share the country label
+partition: auto          # auto | country | none
+
+time_budget_hours: 11.0  # optional stages (cross-encoder, dense) are skipped when they would not fit
+
+# memory: everything in RAM (small data, self-test). scale: partitioned, chunked, disk-backed (the real data:
+# ~22M records). auto picks scale when the six TSVs exceed scale.auto_bytes.
+mode: auto
+scale:
+  auto_bytes: 314572800  # 300 MB
+  train_s1: 200000       # S1 entities sampled from train for model fitting (blocked against the FULL train pool)
+  chunk_s1: 100000       # S1 records per test chunk (bounds memory; each chunk is checkpointed)
+  blocking:              # word-level channels only (character n-grams are infeasible at 5M records/partition)
+    k: {c1: 10, c2: 30, c3: 0, c4: 20, c5: 50, c6: 10, c7: 12, c8: 25, c9: 10}
+    max_df_word: 0.02    # drop tokens in > 2% of the partition ...
+    max_df_abs: 3000     # ... or in > 3000 records. Calibrated on labelled train (India, 20k S1): with word
+                         # bigrams, joint recall@60 is 0.940 at 3000 vs 0.944 at 10000 (2.4x slower); the
+                         # remaining misses are label pairs with unrelated name, address and city.
+
+cache:
+  save_union: false      # the raw blocking union is the largest object; the post-meta checkpoint covers resume
+  min_free_gb: 2.0       # stop writing checkpoints below this much free disk (Kaggle /kaggle/working ~20 GB)
+
+blocking:
+  k: {c1: 30, c2: 30, c3: 15, c4: 20, c5: 30, c6: 5, c7: 15, c8: 20, c9: 10}
+  empty_addr_k_mult: 2.0 # S1 records without an address search the name channels (c1-c3) 2x deeper
+  max_df_char: 0.2       # char n-gram TF-IDF: drop n-grams in > 20% of records (memory + noise)
+  max_df_joint: 0.3
+  twohop_seed_k: 3       # 2-hop: each S1's top-3 c5 hits ...
+  twohop_seed_min: 0.3   # ... with cosine >= 0.3 ...
+  twohop_nb_k: 5         # ... pull their 5 nearest pool neighbours ...
+  twohop_min_sim: 0.6    # ... with cosine >= 0.6
+
+meta:
+  enabled: true
+  top_keep: 3            # always keep each S1's top-3 by meta score
+  cap: 40                # never more than 40 candidates per S1
+  recall_ratio: 0.999    # tau keeps >= 99.9% of the union's true pairs (out-of-fold)
+  neg_sample: 0.25       # fit the meta-blocker on all positives + 25% of negatives (only above 300k union pairs)
+  neg_sample_min_rows: 300000
+
+model:
+  num_boost_round: 4000
+  early_stopping: 100
+  monotone: true
+  lgb: {learning_rate: 0.05, num_leaves: 63, min_data_in_leaf: 100, feature_fraction: 0.7,
+        bagging_fraction: 0.8, bagging_freq: 1, lambda_l2: 2.0}
+  xgb: {eta: 0.05, max_depth: 8, min_child_weight: 2.0, subsample: 0.8, colsample_bytree: 0.7,
+        lambda: 2.0, max_bin: 256}
+  lgb_small: {learning_rate: 0.08, num_leaves: 31, min_data_in_leaf: 50, feature_fraction: 0.9,
+              bagging_fraction: 0.8, bagging_freq: 1, lambda_l2: 1.0}
+  xgb_small: {eta: 0.08, max_depth: 6, min_child_weight: 1.0, subsample: 0.8, colsample_bytree: 0.9,
+              lambda: 1.0, max_bin: 256}
+
+collective:
+  top_m: 10
+
+decoder:
+  max_c: 15
+  gammas: [0.0, 0.25, 0.5, 1.0]          # exclusivity damping (1.0 = off)
+  recal_a: [0.8, 1.0, 1.25, 1.5]         # D3: p' = sigmoid(a * logit p + b)
+  recal_b: [-0.5, -0.25, 0.0, 0.25, 0.5]
+  d1_t1: [0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7]
+  d1_t2: [0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9]
+  d1_r: [0.0, 0.5, 0.7, 0.85, 1.0]
+
+neural:
+  cross_encoder: "auto"   # auto (only with a working CUDA GPU) | on | off
+  ce_model: FacebookAI/xlm-roberta-base   # MIT, 279M params; or a local path / Kaggle model dir
+  ce_max_len: 128
+  ce_batch: 32
+  ce_epochs: 1
+  ce_lr: 2.0e-5
+  ce_max_train: 150000   # per fold-model: all positives + sampled hard negatives
+  ce_min_p1: 0.01        # score pairs with pass-1 p >= 0.01 or rank <= 3 in their S1
+  ce_top_rank: 3
+  ce_min_gain: 0.001     # kill rule: keep the CE feature only if nested OOF F0.5 improves by this much
+  dense: "off"           # auto | on | off  (c8 channel, multilingual-e5-small)
+  dense_model: intfloat/multilingual-e5-small
+  dense_batch: 256

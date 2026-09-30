@@ -1,0 +1,25 @@
+08:57:50 INFO    checkpoint hit: proxy-built-v1-150000-big-pass2-28ce298f491ca8d1 (1.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+08:58:00 INFO proxy profile: {'india': {'pairs_per_s1': 24.99982393332942, 'gray_0.2_0.8': 0.008310666220106276, 'strong_per_s1': 3.2376508793552046, 's1_top_below_0.5': 0.06460342612698972, 'records_claimed_by_2plus_s1': 0.0017130024756820232}, 'us': {'pairs_per_s1': 25.0, 'gray_0.2_0.8': 0.00843499790990064, 'strong_per_s1': 3.3396700858548507, 's1_top_below_0.5': 0.05964822020000643, 'records_claimed_by_2plus_s1': 0.0008325913248609457}}
+08:58:14 INFO submitted policy on the proxy: macro F0.5 0.96825 {'india': 0.9603446036318194, 'us': 0.9760404456405914}
+08:58:41 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-aa22d71da7290a1b.parquet
+08:58:41 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-aa22d71da7290a1b.parquet
+08:58:41 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-aa22d71da7290a1b.parquet
+08:58:41 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-aa22d71da7290a1b.parquet
+08:58:41 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-aa22d71da7290a1b.parquet
+08:58:41 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-aa22d71da7290a1b.parquet
+08:58:41 INFO GPU GBDT unavailable (nvidia-smi not found); using LightGBM on CPU
+08:58:42 INFO    checkpoint hit: big-test-218d8bd52e9bb708 (0.8s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+08:58:43 INFO test profile france: {'pairs_per_s1': 24.999495089650495, 'gray_0.2_0.8': 0.01875190116076223, 'strong_per_s1': 3.3937182985677503, 's1_top_below_0.5': 0.05590629480597567, 'records_claimed_by_2plus_s1': 0.012810859353412545}
+08:58:43 INFO test france: 259452 S1, 1434993 pool, 6486169 pairs (big-test-218d8bd52e9bb708)
+08:58:45 INFO    checkpoint hit: big-test-dc292093f77f9274 (2.5s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+08:58:48 INFO test profile india: {'pairs_per_s1': 24.999780242844004, 'gray_0.2_0.8': 0.011565352871117913, 'strong_per_s1': 3.2906572343932297, 's1_top_below_0.5': 0.06466416044741569, 'records_claimed_by_2plus_s1': 0.003685185366518707}
+08:58:48 INFO test india: 809986 S1, 4717565 pool, 20249447 pairs (big-test-dc292093f77f9274)
+08:58:50 INFO    checkpoint hit: big-test-eeaca6e822d42d90 (1.9s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+08:58:53 INFO test profile us: {'pairs_per_s1': 24.999912532837886, 'gray_0.2_0.8': 0.015424375265116912, 'strong_per_s1': 3.5235150941176827, 's1_top_below_0.5': 0.057025573588536375, 'records_claimed_by_2plus_s1': 0.002372684862399295}
+08:58:53 INFO test us: 663106 S1, 3817031 pool, 16577592 pairs (big-test-eeaca6e822d42d90)
+09:00:44 INFO big models: submitted decoder would select 5692108 matches on the new probabilities
+09:01:58 INFO shift france: mid-band true rate proxy [0.49, 0.57, 0.67, 0.74, 0.8, 0.86, 0.89, 0.92] -> test est [0.22, 0.26, 0.29, 0.31, 0.36, 0.45, 0.55, 0.66]
+09:01:59 INFO shift india: mid-band true rate proxy [0.49, 0.57, 0.67, 0.75, 0.8, 0.86, 0.89, 0.93] -> test est [0.36, 0.4, 0.49, 0.52, 0.58, 0.69, 0.75, 0.82]
+09:02:00 INFO shift us: mid-band true rate proxy [0.49, 0.58, 0.67, 0.72, 0.81, 0.85, 0.88, 0.91] -> test est [0.25, 0.28, 0.31, 0.3, 0.37, 0.41, 0.49, 0.56]
+09:04:43 INFO test decoded: {'pairs_selected': 5460649, 's1_with_matches': 1620457, 'n_s1': 1732544, 'mean_matches': 3.151809708728898, 'empty_rate': 0.06469503804809573, 'path': 'F:\\AMRITA ALL SEMESTER\\projects\\Amazon ML Challenge 2026\\output\\big_v3_shift\\matching_results.tsv', 'candidates_file': 'F:\\AMRITA ALL SEMESTER\\projects\\Amazon ML Challenge 2026\\output\\candidate_pairs.tsv', 'by_partition': {'france': {'n_s1': 259452, 'mean_matches': 3.0962528714367203, 'empty_rate': 0.06393860906834405}, 'india': {'n_s1': 809986, 'mean_matches': 3.1190909472509403, 'empty_rate': 0.06733449713945673}, 'us': {'n_s1': 663106, 'mean_matches': 3.2135133749355305, 'empty_rate': 0.06176689699686023}}, 'official_validator': {'pass': True, 'output': 'ML Challenge 2026 — submission validator\n  test dir: F:\\AMRITA ALL SEMESTER\\projects\\Amazon ML Challenge 2026\\student_resource\\dataset\\test\n  required S1 entities: 1732544\n  matching_results.tsv: 1732544 rows (112087 empty, 1620457 non-empty).\n  candidate_pairs.tsv: 1732544 rows (1 empty, 1732543 non-empty).\n\nWARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.\nPASS — no blocking issues found. Safe to submit.'}, 'sha256': 'abdcea2ce69f720a73e6c5dc950eedec5d30d819064d35ad928890a2b02a5490'}
+09:04:45 INFO done in 416s -> F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\code\business_entity_resolution\reports\decide_big\decide_report.json

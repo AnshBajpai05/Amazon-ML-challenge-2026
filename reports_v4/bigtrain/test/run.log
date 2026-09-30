@@ -1,0 +1,188 @@
+13:53:05 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-44f14e243278c45104c801.parquet
+13:53:05 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-44f14e243278c45104c801.parquet
+13:53:05 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-44f14e243278c45104c801.parquet
+13:53:05 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-44f14e243278c45104c801.parquet
+13:53:05 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-44f14e243278c45104c801.parquet
+13:53:05 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-44f14e243278c45104c801.parquet
+13:53:05 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold0 (0.4s, ..\..\ber_cache)
+13:53:06 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold1 (0.3s, ..\..\ber_cache)
+13:53:06 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold2 (0.3s, ..\..\ber_cache)
+13:53:06 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold3 (0.3s, ..\..\ber_cache)
+13:53:06 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold4 (0.3s, ..\..\ber_cache)
+13:53:07 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold0 (0.4s, ..\..\ber_cache)
+13:53:07 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold1 (0.4s, ..\..\ber_cache)
+13:53:08 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold2 (0.5s, ..\..\ber_cache)
+13:53:08 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold3 (0.4s, ..\..\ber_cache)
+13:53:09 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold4 (0.4s, ..\..\ber_cache)
+13:53:09 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold0 (0.2s, ..\..\ber_cache)
+13:53:09 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold1 (0.2s, ..\..\ber_cache)
+13:53:09 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold2 (0.2s, ..\..\ber_cache)
+13:53:09 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold3 (0.2s, ..\..\ber_cache)
+13:53:09 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold4 (0.2s, ..\..\ber_cache)
+13:54:52 INFO   index: S1=259452 pool=1434993 nnz/pool-row name 3.3 addr 5.1 joint 8.1  (101s)
+14:01:31 INFO features: 400000 pairs x 103 features in 17.6s
+14:01:46 INFO features: 400000 pairs x 103 features in 14.8s
+14:01:59 INFO features: 400000 pairs x 103 features in 12.8s
+14:02:13 INFO features: 400000 pairs x 103 features in 13.5s
+14:02:26 INFO features: 400000 pairs x 103 features in 13.0s
+14:02:39 INFO features: 400000 pairs x 103 features in 12.9s
+14:02:44 INFO features: 99993 pairs x 103 features in 4.5s
+14:14:05 INFO    checkpoint saved: big-test-cf26b721d96f007e-chunk0 (35.0 MB, 2.8s)
+14:14:05 INFO   big test france chunk 1/3: 2499993 candidates | 1256s, ETA 2511s, RSS 1.9 GB
+14:23:45 INFO features: 400000 pairs x 103 features in 23.3s
+14:24:04 INFO features: 400000 pairs x 103 features in 18.6s
+14:24:20 INFO features: 400000 pairs x 103 features in 15.4s
+14:24:36 INFO features: 400000 pairs x 103 features in 16.1s
+14:24:52 INFO features: 400000 pairs x 103 features in 15.7s
+14:25:07 INFO features: 400000 pairs x 103 features in 14.5s
+14:25:13 INFO features: 99997 pairs x 103 features in 5.7s
+14:36:47 INFO    checkpoint saved: big-test-cf26b721d96f007e-chunk1 (35.0 MB, 1.1s)
+14:36:47 INFO   big test france chunk 2/3: 2499997 candidates | 2617s, ETA 1309s, RSS 2.04 GB
+14:41:32 INFO features: 400000 pairs x 103 features in 18.9s
+14:41:44 INFO features: 400000 pairs x 103 features in 12.4s
+14:41:56 INFO features: 400000 pairs x 103 features in 11.3s
+14:42:04 INFO features: 286300 pairs x 103 features in 8.2s
+14:47:46 INFO    checkpoint saved: big-test-cf26b721d96f007e-chunk2 (20.8 MB, 0.6s)
+14:47:46 INFO   big test france chunk 3/3: 1486300 candidates | 3276s, ETA 0s, RSS 1.86 GB
+14:47:48 INFO    checkpoint saved: big-test-cf26b721d96f007e (90.7 MB, 2.6s)
+14:55:00 INFO   index: S1=809986 pool=4717565 nnz/pool-row name 3.4 addr 9.0 joint 12.0  (429s)
+15:04:56 INFO features: 400000 pairs x 103 features in 41.6s
+15:05:27 INFO features: 400000 pairs x 103 features in 30.1s
+15:05:49 INFO features: 400000 pairs x 103 features in 21.8s
+15:06:04 INFO features: 400000 pairs x 103 features in 14.4s
+15:06:19 INFO features: 400000 pairs x 103 features in 14.9s
+15:06:33 INFO features: 400000 pairs x 103 features in 14.0s
+15:06:39 INFO features: 99990 pairs x 103 features in 5.5s
+15:16:15 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk0 (35.9 MB, 1.2s)
+15:16:15 INFO   big test india chunk 1/9: 2499990 candidates | 1707s, ETA 13653s, RSS 2.34 GB
+15:22:43 INFO features: 400000 pairs x 103 features in 29.9s
+15:23:01 INFO features: 400000 pairs x 103 features in 17.3s
+15:23:16 INFO features: 400000 pairs x 103 features in 14.9s
+15:23:31 INFO features: 400000 pairs x 103 features in 14.6s
+15:23:45 INFO features: 400000 pairs x 103 features in 14.4s
+15:24:00 INFO features: 400000 pairs x 103 features in 14.3s
+15:24:06 INFO features: 99998 pairs x 103 features in 5.4s
+15:33:52 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk1 (35.9 MB, 1.2s)
+15:33:52 INFO   big test india chunk 2/9: 2499998 candidates | 2764s, ETA 9673s, RSS 4.13 GB
+15:40:13 INFO features: 400000 pairs x 103 features in 29.2s
+15:40:33 INFO features: 400000 pairs x 103 features in 19.0s
+15:40:49 INFO features: 400000 pairs x 103 features in 16.2s
+15:41:05 INFO features: 400000 pairs x 103 features in 15.0s
+15:41:21 INFO features: 400000 pairs x 103 features in 15.8s
+15:41:35 INFO features: 400000 pairs x 103 features in 14.0s
+15:41:41 INFO features: 99998 pairs x 103 features in 5.3s
+15:51:14 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk2 (35.9 MB, 1.2s)
+15:51:14 INFO   big test india chunk 3/9: 2499998 candidates | 3806s, ETA 7611s, RSS 4.19 GB
+15:57:39 INFO features: 400000 pairs x 103 features in 28.3s
+15:57:56 INFO features: 400000 pairs x 103 features in 16.4s
+15:58:20 INFO features: 400000 pairs x 103 features in 23.7s
+15:58:36 INFO features: 400000 pairs x 103 features in 15.1s
+15:58:50 INFO features: 400000 pairs x 103 features in 13.8s
+15:59:04 INFO features: 400000 pairs x 103 features in 14.1s
+15:59:10 INFO features: 99981 pairs x 103 features in 5.7s
+16:08:58 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk3 (35.9 MB, 1.2s)
+16:08:58 INFO   big test india chunk 4/9: 2499981 candidates | 4869s, ETA 6086s, RSS 4.26 GB
+16:15:30 INFO features: 400000 pairs x 103 features in 31.9s
+16:15:48 INFO features: 400000 pairs x 103 features in 17.7s
+16:16:03 INFO features: 400000 pairs x 103 features in 14.3s
+16:16:18 INFO features: 400000 pairs x 103 features in 14.8s
+16:16:33 INFO features: 400000 pairs x 103 features in 14.6s
+16:16:47 INFO features: 400000 pairs x 103 features in 13.9s
+16:16:52 INFO features: 100000 pairs x 103 features in 5.4s
+16:26:25 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk4 (35.9 MB, 1.2s)
+16:26:25 INFO   big test india chunk 5/9: 2500000 candidates | 5916s, ETA 4733s, RSS 4.06 GB
+16:33:27 INFO features: 400000 pairs x 103 features in 34.5s
+16:33:44 INFO features: 400000 pairs x 103 features in 16.7s
+16:33:58 INFO features: 400000 pairs x 103 features in 13.9s
+16:34:13 INFO features: 400000 pairs x 103 features in 14.6s
+16:34:28 INFO features: 400000 pairs x 103 features in 15.0s
+16:34:42 INFO features: 400000 pairs x 103 features in 14.1s
+16:34:48 INFO features: 100000 pairs x 103 features in 5.3s
+16:44:21 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk5 (35.9 MB, 1.2s)
+16:44:21 INFO   big test india chunk 6/9: 2500000 candidates | 6993s, ETA 3496s, RSS 4.27 GB
+16:52:11 INFO features: 400000 pairs x 103 features in 35.2s
+16:52:30 INFO features: 400000 pairs x 103 features in 18.4s
+16:52:46 INFO features: 400000 pairs x 103 features in 15.9s
+16:53:02 INFO features: 400000 pairs x 103 features in 15.7s
+16:53:17 INFO features: 400000 pairs x 103 features in 14.6s
+16:53:32 INFO features: 400000 pairs x 103 features in 14.7s
+16:53:38 INFO features: 99971 pairs x 103 features in 5.6s
+17:03:34 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk6 (35.9 MB, 1.2s)
+17:03:34 INFO   big test india chunk 7/9: 2499971 candidates | 8145s, ETA 2327s, RSS 4.2 GB
+17:13:34 INFO features: 400000 pairs x 103 features in 28.2s
+17:13:51 INFO features: 400000 pairs x 103 features in 17.3s
+17:14:05 INFO features: 400000 pairs x 103 features in 13.7s
+17:14:20 INFO features: 400000 pairs x 103 features in 14.7s
+17:14:35 INFO features: 400000 pairs x 103 features in 14.7s
+17:14:51 INFO features: 400000 pairs x 103 features in 15.9s
+17:14:57 INFO features: 100000 pairs x 103 features in 5.7s
+17:24:50 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk7 (35.9 MB, 1.2s)
+17:24:50 INFO   big test india chunk 8/9: 2500000 candidates | 9422s, ETA 1178s, RSS 4.11 GB
+17:26:15 INFO features: 249650 pairs x 103 features in 17.1s
+17:27:13 INFO    checkpoint saved: big-test-0da93e747d6c3049-chunk8 (3.6 MB, 0.1s)
+17:27:13 INFO   big test india chunk 9/9: 249650 candidates | 9565s, ETA 0s, RSS 4.82 GB
+17:27:24 INFO    checkpoint saved: big-test-0da93e747d6c3049 (290.6 MB, 8.8s)
+17:33:39 INFO   index: S1=663106 pool=3817031 nnz/pool-row name 4.4 addr 6.6 joint 10.5  (370s)
+17:44:57 INFO features: 400000 pairs x 103 features in 34.9s
+17:45:21 INFO features: 400000 pairs x 103 features in 23.4s
+17:45:39 INFO features: 400000 pairs x 103 features in 18.4s
+17:45:57 INFO features: 400000 pairs x 103 features in 17.9s
+17:46:16 INFO features: 400000 pairs x 103 features in 17.9s
+17:46:34 INFO features: 400000 pairs x 103 features in 17.7s
+17:46:41 INFO features: 99988 pairs x 103 features in 7.3s
+18:05:34 INFO    checkpoint saved: big-test-d89c4b527125ad5c-chunk0 (35.6 MB, 2.3s)
+18:05:34 INFO   big test us chunk 1/7: 2499988 candidates | 2288s, ETA 13730s, RSS 3.51 GB
+18:18:42 INFO features: 400000 pairs x 103 features in 77.4s
+18:19:47 INFO features: 400000 pairs x 103 features in 63.4s
+18:20:26 INFO features: 400000 pairs x 103 features in 39.0s
+18:21:12 INFO features: 400000 pairs x 103 features in 44.6s
+18:21:54 INFO features: 400000 pairs x 103 features in 41.3s
+18:22:40 INFO features: 400000 pairs x 103 features in 44.5s
+18:23:01 INFO features: 100000 pairs x 103 features in 20.4s
+18:41:36 INFO    checkpoint saved: big-test-d89c4b527125ad5c-chunk1 (35.6 MB, 2.5s)
+18:41:36 INFO   big test us chunk 2/7: 2500000 candidates | 4451s, ETA 11127s, RSS 3.05 GB
+18:49:26 INFO features: 400000 pairs x 103 features in 25.9s
+18:49:42 INFO features: 400000 pairs x 103 features in 15.7s
+18:49:56 INFO features: 400000 pairs x 103 features in 13.3s
+18:50:09 INFO features: 400000 pairs x 103 features in 13.1s
+18:50:23 INFO features: 400000 pairs x 103 features in 13.5s
+18:50:36 INFO features: 400000 pairs x 103 features in 12.4s
+18:50:40 INFO features: 100000 pairs x 103 features in 4.3s
+19:00:27 INFO    checkpoint saved: big-test-d89c4b527125ad5c-chunk2 (35.6 MB, 1.4s)
+19:00:27 INFO   big test us chunk 3/7: 2500000 candidates | 5581s, ETA 7442s, RSS 3.16 GB
+19:07:08 INFO features: 400000 pairs x 103 features in 25.6s
+19:07:21 INFO features: 400000 pairs x 103 features in 13.1s
+19:07:33 INFO features: 400000 pairs x 103 features in 11.9s
+19:07:45 INFO features: 400000 pairs x 103 features in 11.3s
+19:07:56 INFO features: 400000 pairs x 103 features in 10.8s
+19:08:07 INFO features: 400000 pairs x 103 features in 11.4s
+19:08:12 INFO features: 99999 pairs x 103 features in 4.5s
+19:18:26 INFO    checkpoint saved: big-test-d89c4b527125ad5c-chunk3 (35.6 MB, 1.7s)
+19:18:26 INFO   big test us chunk 4/7: 2499999 candidates | 6661s, ETA 4996s, RSS 2.9 GB
+19:26:13 INFO features: 400000 pairs x 103 features in 32.4s
+19:26:32 INFO features: 400000 pairs x 103 features in 19.1s
+19:26:49 INFO features: 400000 pairs x 103 features in 16.1s
+19:27:05 INFO features: 400000 pairs x 103 features in 16.2s
+19:27:22 INFO features: 400000 pairs x 103 features in 16.2s
+19:27:39 INFO features: 400000 pairs x 103 features in 16.5s
+19:27:45 INFO features: 100000 pairs x 103 features in 6.1s
+19:38:56 INFO    checkpoint saved: big-test-d89c4b527125ad5c-chunk4 (35.6 MB, 1.3s)
+19:38:56 INFO   big test us chunk 5/7: 2500000 candidates | 7890s, ETA 3156s, RSS 2.9 GB
+19:45:44 INFO features: 400000 pairs x 103 features in 22.3s
+19:45:57 INFO features: 400000 pairs x 103 features in 13.0s
+19:46:08 INFO features: 400000 pairs x 103 features in 10.7s
+19:46:19 INFO features: 400000 pairs x 103 features in 10.5s
+19:46:30 INFO features: 400000 pairs x 103 features in 10.4s
+19:46:41 INFO features: 400000 pairs x 103 features in 10.7s
+19:46:45 INFO features: 100000 pairs x 103 features in 4.2s
+19:56:04 INFO    checkpoint saved: big-test-d89c4b527125ad5c-chunk5 (35.6 MB, 1.2s)
+19:56:04 INFO   big test us chunk 6/7: 2500000 candidates | 8919s, ETA 1486s, RSS 3.45 GB
+20:01:06 INFO features: 400000 pairs x 103 features in 19.0s
+20:01:19 INFO features: 400000 pairs x 103 features in 12.5s
+20:01:30 INFO features: 400000 pairs x 103 features in 10.7s
+20:01:41 INFO features: 377650 pairs x 103 features in 10.8s
+20:07:39 INFO    checkpoint saved: big-test-d89c4b527125ad5c-chunk6 (22.5 MB, 0.7s)
+20:07:39 INFO   big test us chunk 7/7: 1577650 candidates | 9613s, ETA 0s, RSS 3.33 GB
+20:07:47 INFO    checkpoint saved: big-test-d89c4b527125ad5c (236.0 MB, 7.1s)
+20:07:48 INFO big test keys: {'france': 'big-test-cf26b721d96f007e', 'india': 'big-test-0da93e747d6c3049', 'us': 'big-test-d89c4b527125ad5c'}
+20:07:48 INFO stage test done in 22483s

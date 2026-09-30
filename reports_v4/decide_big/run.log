@@ -1,0 +1,2 @@
+20:07:58 INFO    checkpoint hit: proxy-built-v1-60000-big-pass2-41be4f64bfd6c2f2 (0.5s, ..\..\ber_cache)
+20:08:01 INFO proxy profile: {'india': {'pairs_per_s1': 24.999984820195213, 'gray_0.2_0.8': 0.007525544591007236, 'strong_per_s1': 3.326077386644808, 's1_top_below_0.5': 0.05991468949709307, 'records_claimed_by_2plus_s1': 0.0011880663306571377}, 'us': {'pairs_per_s1': 25.0, 'gray_0.2_0.8': 0.00788963311006698, 'strong_per_s1': 3.368122896464394, 's1_top_below_0.5': 0.05876570362224666, 'records_claimed_by_2plus_s1': 0.0007475469568403022}}

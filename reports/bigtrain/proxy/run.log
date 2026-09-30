@@ -1,0 +1,67 @@
+02:00:38 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-aa22d71da7290a1b.parquet
+02:00:38 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-aa22d71da7290a1b.parquet
+02:00:38 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-aa22d71da7290a1b.parquet
+02:00:38 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-aa22d71da7290a1b.parquet
+02:00:38 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-aa22d71da7290a1b.parquet
+02:00:38 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-aa22d71da7290a1b.parquet
+02:00:39 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold0 (0.7s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:39 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold1 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:39 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold2 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:39 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold3 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:39 INFO    checkpoint hit: scale-meta-79d7c0cb98631d6f-fold4 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:40 INFO    checkpoint hit: big-pass1-aebed69fe1daaf63-fold0 (0.5s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:40 INFO    checkpoint hit: big-pass1-aebed69fe1daaf63-fold1 (0.5s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:41 INFO    checkpoint hit: big-pass1-aebed69fe1daaf63-fold2 (0.5s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:41 INFO    checkpoint hit: big-pass1-aebed69fe1daaf63-fold3 (0.5s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:42 INFO    checkpoint hit: big-pass1-aebed69fe1daaf63-fold4 (0.5s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:42 INFO    checkpoint hit: big-pass2-28ce298f491ca8d1-fold0 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:42 INFO    checkpoint hit: big-pass2-28ce298f491ca8d1-fold1 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:42 INFO    checkpoint hit: big-pass2-28ce298f491ca8d1-fold2 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:43 INFO    checkpoint hit: big-pass2-28ce298f491ca8d1-fold3 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:43 INFO    checkpoint hit: big-pass2-28ce298f491ca8d1-fold4 (0.2s, F:\AMRITA ALL SEMESTER\projects\Amazon ML Challenge 2026\ber_cache)
+02:00:43 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-aa22d71da7290a1b.parquet
+02:00:43 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-aa22d71da7290a1b.parquet
+02:00:43 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-aa22d71da7290a1b.parquet
+02:00:43 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-aa22d71da7290a1b.parquet
+02:00:43 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-aa22d71da7290a1b.parquet
+02:00:43 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-aa22d71da7290a1b.parquet
+02:00:44 INFO proxy: models scale-meta-79d7c0cb98631d6f / big-pass1-aebed69fe1daaf63 / big-pass2-28ce298f491ca8d1, 103 pass-1 features
+02:00:56 INFO proxy india: 883188 S1 (19.6% removed -> pool/S1 5.82, test 5.82), 153351 proxy S1 in 17434 regions
+02:04:50 INFO   index: S1=710208 pool=4133346 nnz/pool-row name 3.6 addr 9.2 joint 12.4  (231s)
+02:05:07 INFO     india index over 710208 present S1 x 4133346 pool built (255s, RSS 3.64 GB)
+02:09:15 INFO features: 400000 pairs x 103 features in 27.7s
+02:09:35 INFO features: 400000 pairs x 103 features in 19.2s
+02:09:52 INFO features: 400000 pairs x 103 features in 16.5s
+02:10:08 INFO features: 400000 pairs x 103 features in 15.9s
+02:10:24 INFO features: 400000 pairs x 103 features in 15.9s
+02:10:40 INFO features: 400000 pairs x 103 features in 15.8s
+02:10:46 INFO features: 99973 pairs x 103 features in 6.1s
+02:24:04 INFO    checkpoint saved: proxy-b40c29378f906c3f-chunk0 (36.3 MB, 1.1s)
+02:24:04 INFO     india proxy chunk 1: 100000 S1 -> 2499973 candidates | 1393s, RSS 3.93 GB
+02:26:48 INFO features: 400000 pairs x 103 features in 22.2s
+02:27:05 INFO features: 400000 pairs x 103 features in 16.7s
+02:27:20 INFO features: 400000 pairs x 103 features in 14.7s
+02:27:27 INFO features: 133775 pairs x 103 features in 6.7s
+02:34:34 INFO    checkpoint saved: proxy-b40c29378f906c3f-chunk1 (19.4 MB, 0.6s)
+02:34:34 INFO     india proxy chunk 2: 53351 S1 -> 1333775 candidates | 2022s, RSS 4.25 GB
+02:34:41 INFO proxy us: 1323633 S1 (18.8% removed -> pool/S1 5.76, test 5.76), 155495 proxy S1 in 12237 regions
+02:40:27 INFO   index: S1=1075034 pool=6186873 nnz/pool-row name 4.0 addr 6.1 joint 9.7  (337s)
+02:40:55 INFO     us index over 1075034 present S1 x 6186873 pool built (379s, RSS 4.99 GB)
+02:45:00 INFO features: 400000 pairs x 103 features in 26.1s
+02:45:17 INFO features: 400000 pairs x 103 features in 16.8s
+02:45:30 INFO features: 400000 pairs x 103 features in 12.5s
+02:45:43 INFO features: 400000 pairs x 103 features in 13.0s
+02:45:56 INFO features: 400000 pairs x 103 features in 13.1s
+02:46:09 INFO features: 400000 pairs x 103 features in 12.7s
+02:46:14 INFO features: 100000 pairs x 103 features in 4.6s
+02:59:29 INFO    checkpoint saved: proxy-1dee2ed4a4327f05-chunk0 (36.6 MB, 1.2s)
+02:59:29 INFO     us proxy chunk 1: 100000 S1 -> 2500000 candidates | 1493s, RSS 4.3 GB
+03:02:15 INFO features: 400000 pairs x 103 features in 22.2s
+03:02:32 INFO features: 400000 pairs x 103 features in 16.4s
+03:02:45 INFO features: 400000 pairs x 103 features in 12.6s
+03:02:52 INFO features: 187375 pairs x 103 features in 6.7s
+03:10:12 INFO    checkpoint saved: proxy-1dee2ed4a4327f05-chunk1 (20.3 MB, 0.6s)
+03:10:12 INFO     us proxy chunk 2: 55495 S1 -> 1387375 candidates | 2136s, RSS 4.42 GB
+03:10:22 INFO    checkpoint saved: proxy-built-v1-150000-big-pass2-28ce298f491ca8d1 (116.1 MB, 4.0s)
+03:10:22 INFO big proxy saved: 308846 S1, 7721123 pairs
+03:10:22 INFO stage proxy done in 4185s

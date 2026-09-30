@@ -1,0 +1,10 @@
+# Kaggle GPU images already ship all of these; the notebook installs only what is missing.
+# torch is deliberately NOT listed: installing another torch build on Kaggle breaks its CUDA setup.
+transformers>=4.40
+tokenizers>=0.15
+sentencepiece>=0.1.99
+pandas>=1.5
+pyarrow>=12
+numpy>=1.23
+scikit-learn>=1.2
+matplotlib>=3.6

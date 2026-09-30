@@ -1,0 +1,50 @@
+13:11:57 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-44f14e243278c45104c801.parquet
+13:11:57 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-44f14e243278c45104c801.parquet
+13:11:57 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-44f14e243278c45104c801.parquet
+13:11:57 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-44f14e243278c45104c801.parquet
+13:11:57 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-44f14e243278c45104c801.parquet
+13:11:57 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-44f14e243278c45104c801.parquet
+13:11:58 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold0 (0.6s, ..\..\ber_cache)
+13:11:58 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold1 (0.3s, ..\..\ber_cache)
+13:11:58 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold2 (0.3s, ..\..\ber_cache)
+13:11:59 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold3 (0.3s, ..\..\ber_cache)
+13:11:59 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold4 (0.3s, ..\..\ber_cache)
+13:11:59 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold0 (0.4s, ..\..\ber_cache)
+13:12:00 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold1 (0.4s, ..\..\ber_cache)
+13:12:00 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold2 (0.5s, ..\..\ber_cache)
+13:12:01 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold3 (0.5s, ..\..\ber_cache)
+13:12:01 INFO    checkpoint hit: big-pass1-d64528093fe13cf7-fold4 (0.5s, ..\..\ber_cache)
+13:12:01 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold0 (0.2s, ..\..\ber_cache)
+13:12:02 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold1 (0.2s, ..\..\ber_cache)
+13:12:02 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold2 (0.1s, ..\..\ber_cache)
+13:12:02 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold3 (0.2s, ..\..\ber_cache)
+13:12:02 INFO    checkpoint hit: big-pass2-41be4f64bfd6c2f2-fold4 (0.2s, ..\..\ber_cache)
+13:12:02 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-44f14e243278c45104c801.parquet
+13:12:02 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-44f14e243278c45104c801.parquet
+13:12:02 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-44f14e243278c45104c801.parquet
+13:12:02 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-44f14e243278c45104c801.parquet
+13:12:02 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-44f14e243278c45104c801.parquet
+13:12:02 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-44f14e243278c45104c801.parquet
+13:12:03 INFO proxy: models scale-meta-01bac6e1e12301c0 / big-pass1-d64528093fe13cf7 / big-pass2-41be4f64bfd6c2f2, 103 pass-1 features
+13:12:16 INFO proxy india: 883188 S1 (19.6% removed -> pool/S1 5.82, test 5.82), 65877 proxy S1 in 8040 regions
+13:18:29 INFO   index: S1=710208 pool=4133346 nnz/pool-row name 3.4 addr 9.1 joint 12.2  (372s)
+13:18:51 INFO     india index over 710208 present S1 x 4133346 pool built (399s, RSS 3.59 GB)
+13:23:37 INFO features: 400000 pairs x 103 features in 26.4s
+13:23:54 INFO features: 400000 pairs x 103 features in 16.6s
+13:24:08 INFO features: 400000 pairs x 103 features in 13.7s
+13:24:21 INFO features: 400000 pairs x 103 features in 13.5s
+13:24:26 INFO features: 46924 pairs x 103 features in 4.1s
+13:30:46 INFO    checkpoint saved: proxy-78acd2afc2393618-chunk0 (23.9 MB, 0.7s)
+13:30:46 INFO     india proxy chunk 1: 65877 S1 -> 1646924 candidates | 1115s, RSS 3.99 GB
+13:30:53 INFO proxy us: 1323633 S1 (18.8% removed -> pool/S1 5.76, test 5.76), 60018 proxy S1 in 4231 regions
+13:39:51 INFO   index: S1=1075034 pool=6186873 nnz/pool-row name 3.9 addr 6.0 joint 9.5  (532s)
+13:40:18 INFO     us index over 1075034 present S1 x 6186873 pool built (571s, RSS 4.63 GB)
+13:44:42 INFO features: 400000 pairs x 103 features in 27.3s
+13:44:56 INFO features: 400000 pairs x 103 features in 13.4s
+13:45:07 INFO features: 400000 pairs x 103 features in 11.7s
+13:45:17 INFO features: 300450 pairs x 103 features in 9.6s
+13:51:35 INFO    checkpoint saved: proxy-64feb3ac45bec406-chunk0 (21.9 MB, 0.7s)
+13:51:35 INFO     us proxy chunk 1: 60018 S1 -> 1500450 candidates | 1247s, RSS 2.83 GB
+13:51:43 INFO    checkpoint saved: proxy-built-v1-60000-big-pass2-41be4f64bfd6c2f2 (47.2 MB, 1.7s)
+13:51:43 INFO big proxy saved: 125895 S1, 3147374 pairs
+13:51:43 INFO stage proxy done in 2386s

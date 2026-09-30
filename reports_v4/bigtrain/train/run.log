@@ -1,0 +1,64 @@
+11:16:21 INFO   normalized cache hit: norm-train_source1-210069713-1790376971-44f14e243278c45104c801.parquet
+11:16:21 INFO   normalized cache hit: norm-train_source2-489301488-1790376963-44f14e243278c45104c801.parquet
+11:16:21 INFO   normalized cache hit: norm-train_source3-503705637-1790376969-44f14e243278c45104c801.parquet
+11:16:21 INFO   normalized cache hit: norm-test_source1-175022086-1790376957-44f14e243278c45104c801.parquet
+11:16:21 INFO   normalized cache hit: norm-test_source2-509456422-1790376951-44f14e243278c45104c801.parquet
+11:16:21 INFO   normalized cache hit: norm-test_source3-506002772-1790376956-44f14e243278c45104c801.parquet
+11:16:21 INFO GPU GBDT unavailable (nvidia-smi not found); using LightGBM on CPU
+11:16:22 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold0 (0.6s, ..\..\ber_cache)
+11:16:22 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold1 (0.3s, ..\..\ber_cache)
+11:16:23 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold2 (0.3s, ..\..\ber_cache)
+11:16:23 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold3 (0.3s, ..\..\ber_cache)
+11:16:23 INFO    checkpoint hit: scale-meta-01bac6e1e12301c0-fold4 (0.3s, ..\..\ber_cache)
+11:16:37 INFO    checkpoint hit: scale-feat-f15bc9c77fc87d21 (12.7s, ..\..\ber_cache)
+11:16:38 INFO    checkpoint hit: proxy-built-v1-150000 (1.3s, ..\..\ber_cache)
+11:16:58 INFO    checkpoint hit: big-extra-c65d3304bb88bc59-india-chunk0 (3.7s, ..\..\ber_cache)
+11:16:58 INFO   extra india chunk 1: 76687 S1 -> 1917175 pairs, 258088 true | 9s, RSS 5.58 GB
+11:27:45 INFO   index: S1=1323633 pool=6186873 nnz/pool-row name 3.9 addr 5.9 joint 9.4  (640s)
+11:28:16 INFO   extra us: index built (678s, RSS 4.6 GB)
+11:34:21 INFO features: 400000 pairs x 103 features in 33.3s
+11:34:36 INFO features: 400000 pairs x 103 features in 15.0s
+11:34:49 INFO features: 400000 pairs x 103 features in 12.2s
+11:35:01 INFO features: 400000 pairs x 103 features in 11.9s
+11:35:13 INFO features: 400000 pairs x 103 features in 11.4s
+11:35:25 INFO features: 400000 pairs x 103 features in 11.7s
+11:35:29 INFO features: 100000 pairs x 103 features in 4.2s
+11:35:51 INFO    checkpoint saved: big-extra-c65d3304bb88bc59-us-chunk0 (292.4 MB, 10.2s)
+11:35:51 INFO   extra us chunk 1: 100000 S1 -> 2500000 pairs, 341042 true | 1133s, RSS 5.74 GB
+11:37:57 INFO features: 400000 pairs x 103 features in 19.1s
+11:38:04 INFO features: 182825 pairs x 103 features in 7.2s
+11:38:10 INFO    checkpoint saved: big-extra-c65d3304bb88bc59-us-chunk1 (68.3 MB, 2.4s)
+11:38:10 INFO   extra us chunk 2: 23313 S1 -> 582825 pairs, 79391 true | 1272s, RSS 6.11 GB
+11:38:18 INFO    checkpoint hit: big-extra-c65d3304bb88bc59-india-chunk0 (3.7s, ..\..\ber_cache)
+11:38:23 INFO    checkpoint hit: big-extra-c65d3304bb88bc59-us-chunk0 (4.4s, ..\..\ber_cache)
+11:38:24 INFO    checkpoint hit: big-extra-c65d3304bb88bc59-us-chunk1 (1.0s, ..\..\ber_cache)
+11:38:38 INFO    checkpoint hit: scale-feat-f15bc9c77fc87d21 (11.9s, ..\..\ber_cache)
+11:39:08 INFO big training set: 400000 S1 (200000 base + 200000 extra), 9999987 pairs, 1356159 true, train mask 66.3% (RSS 6.01 GB)
+11:39:08 INFO   big-pass1 [lightgbm]: 9999987 rows x 103 feats, pos rate 0.1356, 5 folds x 1 seeds
+11:54:05 INFO    checkpoint saved: big-pass1-d64528093fe13cf7-fold0 (34.0 MB, 1.2s)
+11:54:06 INFO     big-pass1 fold 1/5: AUC 0.99962  AP 0.99793  logloss 0.01447  iters [3000]  897s  (ETA 3592s)
+12:08:35 INFO    checkpoint saved: big-pass1-d64528093fe13cf7-fold1 (32.4 MB, 1.7s)
+12:08:36 INFO     big-pass1 fold 2/5: AUC 0.99963  AP 0.99800  logloss 0.01420  iters [2745]  869s  (ETA 2652s)
+12:26:24 INFO    checkpoint saved: big-pass1-d64528093fe13cf7-fold2 (37.0 MB, 1.4s)
+12:26:26 INFO     big-pass1 fold 3/5: AUC 0.99964  AP 0.99802  logloss 0.01411  iters [3456]  1068s  (ETA 1892s)
+12:42:34 INFO    checkpoint saved: big-pass1-d64528093fe13cf7-fold3 (33.7 MB, 1.9s)
+12:42:36 INFO     big-pass1 fold 4/5: AUC 0.99963  AP 0.99797  logloss 0.01435  iters [2955]  969s  (ETA 952s)
+12:58:00 INFO    checkpoint saved: big-pass1-d64528093fe13cf7-fold4 (33.0 MB, 1.2s)
+12:58:01 INFO     big-pass1 fold 5/5: AUC 0.99962  AP 0.99795  logloss 0.01435  iters [2842]  924s  (ETA 0s)
+12:58:07 INFO   big-pass1 done: OOF AUC 0.99963  AP 0.99797  logloss 0.01430  in 4738.8s
+12:58:24 INFO   big-pass2 [lightgbm]: 9999987 rows x 115 feats, pos rate 0.1356, 5 folds x 1 seeds
+13:01:05 INFO    checkpoint saved: big-pass2-41be4f64bfd6c2f2-fold0 (17.0 MB, 0.7s)
+13:01:07 INFO     big-pass2 fold 1/5: AUC 0.99966  AP 0.99816  logloss 0.01351  iters [385]  161s  (ETA 650s)
+13:04:01 INFO    checkpoint saved: big-pass2-41be4f64bfd6c2f2-fold1 (17.1 MB, 0.6s)
+13:04:02 INFO     big-pass2 fold 2/5: AUC 0.99967  AP 0.99819  logloss 0.01331  iters [399]  174s  (ETA 507s)
+13:06:15 INFO    checkpoint saved: big-pass2-41be4f64bfd6c2f2-fold2 (16.3 MB, 0.5s)
+13:06:17 INFO     big-pass2 fold 3/5: AUC 0.99967  AP 0.99822  logloss 0.01322  iters [295]  133s  (ETA 315s)
+13:08:49 INFO    checkpoint saved: big-pass2-41be4f64bfd6c2f2-fold3 (16.9 MB, 0.6s)
+13:08:50 INFO     big-pass2 fold 4/5: AUC 0.99967  AP 0.99819  logloss 0.01339  iters [377]  153s  (ETA 157s)
+13:11:10 INFO    checkpoint saved: big-pass2-41be4f64bfd6c2f2-fold4 (16.5 MB, 0.6s)
+13:11:11 INFO     big-pass2 fold 5/5: AUC 0.99966  AP 0.99816  logloss 0.01348  iters [321]  140s  (ETA 0s)
+13:11:18 INFO   big-pass2 done: OOF AUC 0.99967  AP 0.99818  logloss 0.01338  in 773.6s
+13:11:33 INFO big pass1 OOF macro F0.5 (train S1s, no exclusivity) 0.97615 | base part 0.97602
+13:11:50 INFO big pass2 OOF macro F0.5 (train S1s, no exclusivity) 0.97817 | base part 0.97802
+13:11:50 INFO manifest -> reports_v4\bigtrain\manifest.json
+13:11:51 INFO stage train done in 6930s

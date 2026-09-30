@@ -1,0 +1,17 @@
+# Pinned environment the submitted outputs were produced with (Python 3.11).
+# The code is also tested against older Kaggle-style stacks (see README "Compatibility").
+numpy==2.3.3
+scipy==1.16.2
+pandas==2.3.3
+scikit-learn==1.7.2
+lightgbm==4.6.0
+xgboost==3.2.0
+rapidfuzz==3.14.6
+sparse_dot_topn==1.2.0
+joblib==1.5.2
+PyYAML==6.0.3
+pyarrow==24.0.0
+psutil==7.1.0
+# Optional GPU boosters (cross-encoder / dense blocking); only used when a working CUDA GPU is present.
+# torch==2.4.1
+# transformers==4.57.1
